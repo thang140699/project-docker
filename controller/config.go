@@ -5,4 +5,9 @@ type Config struct {
 	RedisURL string
 	JwtKey   string
 	Binding  string
+
+	
+	configPrefix string
+	mode         string
+	configSource string
 }

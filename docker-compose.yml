@@ -17,14 +17,14 @@ services:
     ports:
       - 6378:6379
 
-  client:
-    image: eventauth:1.1
-    container_name: event_client
-    restart: unless-stopped
-    env_file:
-      - ./controller/.env
-    depends_on:
-      - mongodb
-      - redis
-    ports:
-      - 8081:8081
+  # client:
+  #   image: eventauth:1.1
+  #   container_name: event_client
+  #   restart: unless-stopped
+  #   env_file:
+  #     - ./controller/.env
+  #   depends_on:
+  #     - mongodb
+  #     - redis
+  #   ports:
+  #     - 8081:8081
